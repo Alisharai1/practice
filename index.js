@@ -11,8 +11,9 @@
 
 //     // Number = 1
 
-//     const func = (element,index)=> console.log(` index ${index} Number = ${element}`)
-    
+//     const func = (element,index)=> {
+// console.log(` index ${index} Number = ${element}`)
+//}    
 
 
 //     function func1(a,b){
@@ -60,32 +61,57 @@
 
 // main()
 
-function main3(){
-    const a=[2,4]
-    a.push(6,7,8,9);
-    a.push(11);
-    a.pop();
-    a.forEach((c)=>{
-        console.log(c)
-    })
-    a.pop()
-    a.forEach((c,idx)=>{
-        console.log(c*idx)
-    })
-    a.push(35,57,24,59,27)
-    a.forEach((element)=>{
-        //console.log(element)
-        if(element%2!==0){
-            console.log(element)
-        }
+// function main3(){
+//     const a=[2,4]
+//     a.push(6,7,8,9);
+//     a.push(11);
+//     a.pop();
+//     a.forEach((c)=>{
+//         console.log(c)
+//     })
+//     a.pop()
+//     a.forEach((c,idx)=>{
+//         console.log(c*idx)
+//     })
+//     a.push(35,57,24,59,27)
+//     a.forEach((element)=>{
+//         //console.log(element)
+//         if(element%2!==0){
+//             console.log(element)
+//         }
 
-    })
+//     })
 
-}
+// }
 
-main3()
+// main3()
 // use for loop, for each, and filter
 //print all element of array
 // print all odd element and even element
 // print all teh string whose length is >2
 // print all the element which is divisible by 10
+
+
+// function func(){
+//     const arr1=[2,4,6,7,8,9]   
+//     arr1.forEach(element => {
+//         console.log(element);
+//     });
+// }
+// func()
+
+//along with index- index 0, value-1
+
+function main(){
+    const arr1=[2,4,6,7,8,9]  
+   
+
+    const func1=(element,index)=>{
+         
+        console.log(`index is ${index} and the value is ${element}`)
+    }
+    arr1.forEach(func1)
+
+}
+
+main()
